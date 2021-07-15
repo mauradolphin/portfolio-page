@@ -25,6 +25,11 @@
 			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 			crossorigin="anonymous"
 		></script>
+		<script
+			src="https://kit.fontawesome.com/263c8db784.js"
+			crossorigin="anonymous"
+		></script>
+
 		<meta
 			name="description"
 			content="Maura Dolphin - Front-end Web Developer - Designer - Jeweler"
@@ -36,20 +41,36 @@
 		/>
 		<meta property="og-type" content="person" />
 	</head>
+
 	<body class="border-bottom border-dark">
 		<header>
-			<h1 id="home-name" class="text-center pt-2 mt-2">MAURA DOLPHIN</h1>
+			<h1 id="home-name" class="text-center pt-2 mt-2">Maura Dolphin</h1>
 			<div class="navigation mt-1 border-bottom border-dark">
-				<div class="resume nav-menu"><a href="/resume.html">Resume</a></div>
-				<div class="about nav-menu"><a href="/about.html">About</a></div>
+				<div class="resume nav-menu"><a href="/resume.html">Résumé</a></div>
 				<div class="contact nav-menu">
-					<a href="/about.html#contact">Contact</a>
+					<ul class="nav nav-pills nav-menu">
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								data-bs-toggle="dropdown"
+								href="#"
+								role="button"
+								aria-expanded="false"
+								>Portfolio</a
+							>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Web Development</a></li>
+								<li><a class="dropdown-item" href="#">Jewelry</a></li>
+							</ul>
+						</li>
+					</ul>
 				</div>
+				<div class="about nav-menu"><a href="/about.html">About</a></div>
 			</div>
 		</header>
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6 border-end border-dark p-5">
+				<div class="col-sm-6 p-5 designer-border">
 					<a href="#">
 						<h2 class="text-center home-hero-text">
 							Designer <br /><small><em>and</em></small
@@ -57,6 +78,7 @@
 							Developer
 						</h2>
 					</a>
+					<a href="#"><i class="fas fa-desktop icon-button"></i></a>
 				</div>
 				<div class="col-sm-6 p-5">
 					<a href="">
@@ -66,8 +88,43 @@
 							Fine Artist
 						</h2>
 					</a>
+					<a href="#"><i class="far fa-gem icon-button"></i></a>
 				</div>
 			</div>
 		</div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3 class="text-center stay-in-touch">Let's Stay in Touch</h3>
+						<a
+							href="mailto:maura@mauradolphin.com?subject=Hello,%20Maura&body=Please%20tell%20me%20more%20about%20yourself!"
+							class="text-center p-2 mt-3 mb-3 contact-button"
+							>email me</a
+						>
+					</div>
+				</div>
+			</div>
+			<div class="navigation">
+        
+				<div class="footer"><a href="https://www.instagram.com/auramjewelry/" target=
+        "_blank"><i class="fab fa-instagram"></i></a></div>
+				<div class="footer"><a href="https://www.facebook.com/auramjewelry/" target=
+        "_blank"><i class="fab fa-facebook-f"></i></a></div>
+				<div class="footer"><a href="https://www.linkedin.com/in/maura-lenahan-dolphin-6ab2b381/" target=
+        "_blank"><i class="fab fa-linkedin-in"></i></a></div>
+				<div class="footer">
+					<a href="https://auramjewelry.com/" target="_blank"><i class="fas fa-shopping-bag" id="contact"></a></i>
+				</div>
+			</div>
+		</footer>
+		<script>
+			var dropdownElementList = [].slice.call(
+				document.querySelectorAll(".dropdown-toggle")
+			);
+			var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+				return new bootstrap.Dropdown(dropdownToggleEl);
+			});
+		</script>
 	</body>
 </html>
