@@ -1,10 +1,9 @@
 /** @format */
 
 :root {
-	--primary-color: #6c63ff;
+	--primary-color: #8f9bc6;
 	--secondary-color: #f5f2fe;
 	--tertiary-color: #dde4ff;
-	--fourth-color: #8f9bc6;
 	--box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 	--primary-logo-font: "Montserrat", sans-serif;
 	--secondary-hero-font: "EB Garamond", serif;
@@ -51,7 +50,7 @@ a {
 }
 
 a:hover {
-	color: var(--fourth-color) !important;
+	color: var(--primary-color) !important;
 }
 
 #about-text {
@@ -90,7 +89,7 @@ a:hover {
 }
 
 .about-link:hover {
-	color: var(--fourth-color);
+	color: var(--primary-color);
 }
 
 .homepage-link {
@@ -114,7 +113,7 @@ a:hover {
 
 .email-link:hover {
 	text-decoration: underline;
-	color: var(--fourth-color);
+	color: var(--primary-color);
 }
 
 .primary-link {
@@ -152,7 +151,7 @@ a:hover {
 }
 
 .footer a {
-	color: var(--fourth-color) !important;
+	color: var(--primary-color) !important;
 }
 
 .navigation a {
@@ -160,7 +159,7 @@ a:hover {
 }
 
 .navigation a:hover {
-	color: var(--fourth-color) !important;
+	color: var(--primary-color) !important;
 }
 
 .test-pic {
@@ -208,7 +207,7 @@ a:hover {
 	font-size: 14px;
 	line-height: 16px;
 	font-family: var(--secondary-hero-font);
-	border: 0.5px solid var(--fourth-color);
+	border: 0.5px solid var(--primary-color);
 	border-radius: 4px;
 	letter-spacing: 0.1em;
 	color: black;
@@ -226,7 +225,7 @@ a:hover {
 	display: block !important;
 	margin: 0 auto !important;
 	text-align: center;
-	color: var(--fourth-color);
+	color: var(--primary-color);
 	font-size: 28px;
 	transition: all ease-in-out 200ms;
 }
@@ -240,7 +239,7 @@ a:hover {
 	margin: 5px 10px;
 	padding: 1px 10px;
 	font-size: 18px;
-	color: var(--fourth-color);
+	color: var(--primary-color);
 }
 
 @media (max-width: 576px) {
