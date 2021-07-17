@@ -6,12 +6,18 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Web-developer Maura Dolphin</title>
+		<title>Maura Dolphin - Web Developer - Jeweler</title>
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
 			rel="stylesheet"
 			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Montserrat:wght@100;200;300&family=Work+Sans:wght@100;200;300;400;500&display=swap"
+			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="style.css" />
 		<script
@@ -19,134 +25,106 @@
 			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 			crossorigin="anonymous"
 		></script>
+		<script
+			src="https://kit.fontawesome.com/263c8db784.js"
+			crossorigin="anonymous"
+		></script>
+
 		<meta
 			name="description"
-			content="A brief page about Maura Dolphin, and American web developer with a design backgeround and a passion for learning."
+			content="Maura Dolphin - Front-end Web Developer - Designer - Jeweler"
 		/>
+		<meta name="viewport" content="width=device-width,user-scalable=no" />
+		<meta
+			property="og-title"
+			content="Maura Dolphin-Front-end Web Developer-Designer-Jeweler"
+		/>
+		<meta property="og-type" content="person" />
 	</head>
-	<body>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light mb-5 fixed-top">
-			<div class="container">
-				<a class="navbar-brand" href="index.html" title="Maura Dolphin"
-					>Maura Dolphin</a
-				>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarNav"
-					aria-controls="navbarNav"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav">
-						<li class="nav-item">
+
+	<body class="border-bottom border-dark">
+		<header>
+			<h1 id="home-name" class="text-center pt-2 mt-2">Maura Dolphin</h1>
+			<div class="navigation mt-1 border-bottom border-dark">
+				<div class="resume nav-menu"><a href="/resume.html">Résumé</a></div>
+				<div class="contact nav-menu">
+					<ul class="nav nav-pills nav-menu">
+						<li class="nav-item dropdown">
 							<a
-								class="nav-link active"
-								aria-current="page"
+								class="nav-link dropdown-toggle"
+								data-bs-toggle="dropdown"
 								href="#"
-								title="Back to Homepage"
-								>Home</a
+								role="button"
+								aria-expanded="false"
+								>Portfolio</a
 							>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="about.html" title="About Maura Dolphin"
-								>About</a
-							>
-						</li>
-						<li class="nav-item">
-							<a
-								class="nav-link"
-								href="about.html#contact"
-								title="Contact Maura Dolphin"
-								>Contact</a
-							>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/trial-index.html" title="Home2"
-								>Trial Home</a
-							>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="https://heuristic-raman-3c13c1.netlify.app/" target="_blank">Web Development</a></li>
+								<li><a class="dropdown-item" href="#">Jewelry</a></li>
+							</ul>
 						</li>
 					</ul>
 				</div>
+				<div class="about nav-menu"><a href="/about.html">About</a></div>
 			</div>
-		</nav>
-		<h2 class="text-center">👋 Hi, I am</h2>
-		<h1 class="text-center">Maura Dolphin</h1>
-		<h3 class="text-center">
-			🇺🇸 Front-end developer, based in the United States
-		</h3>
-		<div class="navigation-links mb-5">
-			<a
-				href="about.html#contact"
-				class="contact-link"
-				title="Contact Maura Dolphin"
-				>Contact me</a
-			>
-			<a href="about.html" class="about-link" title="About Maura Dolphin"
-				>About me</a
-			>
-		</div>
+		</header>
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6">
-					<img
-						src="images/yoga.png"
-						alt="yoga app"
-						class="img-fluid rounded d-none d-sm-block"
-					/>
+				<div class="col-sm-6 p-5 designer-border">
+					<a href="#">
+						<h2 class="text-center home-hero-text">
+							Designer <br /><small><em>and</em></small
+							><br />
+							Developer
+						</h2>
+					</a>
+					<a href="#"><i class="fas fa-desktop icon-button"></i></a>
 				</div>
-				<div class="col-sm-6">
-					<h2 class="mb-2">Yoga App</h2>
-					<p>Learn about the ancient practice and find a current class.</p>
-					<div class="mt-5">
-						<a href="#" class="primary-link project-link" title="Yoga app"
-							>Launch Yoga App🧘‍♀️</a
-						>
-					</div>
-				</div>
-			</div>
-			<div class="row mt-5">
-				<div class="col-sm-6">
-					<h2 class="mb-2">Weather app</h2>
-					<p>
-						Search the current weather and forecast for any city in the world.
-					</p>
-					<div class="mt-5 index-buttons">
-						<a href="#" class="primary-link project-link" title="Weather app">
-							Launch Weather App🌧</a
-						>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<img
-						src="images/weather.png"
-						alt="weather app"
-						class="img-fluid rounded d-none d-sm-block"
-					/>
-				</div>
-			</div>
-			<div class="row mt-5 mb-5">
-				<div class="col-sm-6">
-					<img
-						src="images/yogurt.png"
-						alt="yogurt app"
-						class="img-fluid rounded d-none d-sm-block"
-					/>
-				</div>
-				<div class="col-sm-6">
-					<h2 class="mb-2">Yogurt app</h2>
-					<p>Learn more about everyone's favorite fermented food.</p>
-					<div class="mt-5">
-						<a href="#" class="primary-link project-link" title="Yogurt App"
-							>Launch Yogurt App🥄</a
-						>
-					</div>
+				<div class="col-sm-6 p-5">
+					<a href="">
+						<h2 class="text-center home-hero-text">
+							Jeweler <br /><small><em>and</em></small
+							><br />
+							Fine Artist
+						</h2>
+					</a>
+					<a href="#"><i class="far fa-gem icon-button"></i></a>
 				</div>
 			</div>
 		</div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3 class="text-center stay-in-touch">Let's Stay in Touch</h3>
+						<a
+							href="mailto:maura@mauradolphin.com?subject=Hello,%20Maura&body=Please%20tell%20me%20more%20about%20yourself!"
+							class="text-center p-2 mt-3 mb-3 contact-button"
+							>email me</a
+						>
+					</div>
+				</div>
+			</div>
+			<div class="navigation mb-2">
+        
+				<div class="footer"><a href="https://www.instagram.com/auramjewelry/" target=
+        "_blank"><i class="fab fa-instagram"></i></a></div>
+				<div class="footer"><a href="https://www.facebook.com/auramjewelry/" target=
+        "_blank"><i class="fab fa-facebook-f"></i></a></div>
+				<div class="footer"><a href="https://www.linkedin.com/in/maura-lenahan-dolphin-6ab2b381/" target=
+        "_blank"><i class="fab fa-linkedin-in"></i></a></div>
+				<div class="footer">
+					<a href="https://auramjewelry.com/" target="_blank"><i class="fas fa-shopping-bag" id="contact"></a></i>
+				</div>
+			</div>
+		</footer>
+		<script>
+			var dropdownElementList = [].slice.call(
+				document.querySelectorAll(".dropdown-toggle")
+			);
+			var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+				return new bootstrap.Dropdown(dropdownToggleEl);
+			});
+		</script>
 	</body>
 </html>
