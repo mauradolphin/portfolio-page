@@ -150,6 +150,12 @@ a:hover {
 	align-items: center;
 }
 
+.test {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .footer a {
 	color: var(--primary-color) !important;
 }
@@ -194,7 +200,7 @@ a:hover {
 	max-height: 200px;
 }
 
-#home-name {
+.home-name {
 	font-size: 24px;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
@@ -242,6 +248,10 @@ a:hover {
 	color: var(--primary-color);
 }
 
+#about-me {
+	padding-top: 100px;
+}
+
 @media (max-width: 576px) {
 	h1 {
 		font-size: 56px;
@@ -275,5 +285,14 @@ a:hover {
 	.designer-border {
 		border-right: none;
 		border-bottom: 1px solid grey;
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar-brand.abs {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		text-align: center;
 	}
 }
