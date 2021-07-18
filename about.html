@@ -4,13 +4,20 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Comge" />
-		<meta name="v=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maura Dolphin - Web Developer - Jeweler</title>
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
 			rel="stylesheet"
 			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Montserrat:wght@100;200;300&family=Work+Sans:wght@100;200;300;400;500&display=swap"
+			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="style.css" />
 		<script
@@ -18,79 +25,60 @@
 			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 			crossorigin="anonymous"
 		></script>
+		<script
+			src="https://kit.fontawesome.com/263c8db784.js"
+			crossorigin="anonymous"
+		></script>
+
 		<meta
-			name="Descriptive page about Maura Dolphin, and American web developer with a design backgeround and a passion for learning."
+			name="description"
+			content="Maura Dolphin - Front-end Web Developer - Designer - Jeweler"
 		/>
-		<title>About Maura Dolphin</title>
+		<meta name="viewport" content="width=device-width,user-scalable=no" />
+		<meta
+			property="og-title"
+			content="Maura Dolphin-Front-end Web Developer-Designer-Jeweler"
+		/>
+		<meta property="og-type" content="person" />
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-md navbar-light mb-5 fixed-top">
-			<div class="container">
-				<a
-					class="navbar-brand justify-content-center home-name"
-					href="index.html"
-					title="Maura Dolphin"
-					>Maura Dolphin</a
-				>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarNav"
-					aria-controls="navbarNav"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav">
-						<li class="nav-item test">
-							<a
-								class="nav-link nav-menu"
-								aria-current="page"
-								href="index.html"
-								title="Back to Homepage"
-								>Home</a
-							>
-						</li>
-						<li class="nav-item test">
-							<a
-								class="nav-link active nav-menu"
-								href="about.html"
-								title="About Maura Dolphin"
-								>About</a
-							>
-						</li>
-						<ul class="nav nav-pills nav-menu">
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									data-bs-toggle="dropdown"
-									href="#"
-									role="button"
-									aria-expanded="false"
-									>Portfolio</a
-								>
-								<ul class="dropdown-menu">
-									<li>
-										<a
-											class="dropdown-item"
-											href="https://heuristic-raman-3c13c1.netlify.app/"
-											target="_blank"
-											>Web Development</a
-										>
-									</li>
-									<li><a class="dropdown-item" href="#">Jewelry</a></li>
-								</ul>
-							</li>
-						</ul>
-					</ul>
-				</div>
-			</div>
-		</nav>
+		<header>
+			<h1 id="home-name" class="text-center pt-2 mt-2 home-name">
+				Maura Dolphin
+			</h1>
+			<div class="navigation border-bottom border-dark">
+				<div class="about nav-menu"><a href="/index.html"> Home</a></div>
+				<div class="resume nav-menu"><a href="/resume.html">Résumé</a></div>
 
-		<h1 class="text-center" id="about-me">About me</h1>
+				<ul class="nav nav-pills nav-menu">
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle padding-test"
+							data-bs-toggle="dropdown"
+							href="#"
+							role="button"
+							aria-expanded="false"
+							>Portfolio</a
+						>
+						<ul class="dropdown-menu">
+							<li>
+								<a
+									class="dropdown-item"
+									href="https://heuristic-raman-3c13c1.netlify.app/"
+									target="_blank"
+									>Web Development</a
+								>
+							</li>
+							<li><a class="dropdown-item" href="#">Jewelry</a></li>
+						</ul>
+					</li>
+				</ul>
+
+				<div class="contact nav-menu"><a href="#contact">Contact</a></div>
+			</div>
+		</header>
+
+		<h1 class="text-center pt-3 pb-3" id="about-me">About Me</h1>
 		<h3 class="text-center ms-1 mr-1 mb-0">
 			Front-end developer from Chicago, USA
 		</h3>
@@ -148,5 +136,13 @@
 				maura@auramjewelry.com
 			</a>
 		</div>
+		<script>
+			var dropdownElementList = [].slice.call(
+				document.querySelectorAll(".dropdown-toggle")
+			);
+			var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+				return new bootstrap.Dropdown(dropdownToggleEl);
+			});
+		</script>
 	</body>
 </html>

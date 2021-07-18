@@ -45,12 +45,13 @@
 	<body class="border-bottom border-dark">
 		<header>
 			<h1 id="home-name" class="text-center pt-2 mt-2 home-name">Maura Dolphin</h1>
-			<div class="navigation mt-1 border-bottom border-dark">
-				<div class="resume nav-menu"><a href="/resume.html">Résumé</a></div>
+			<div class="navigation border-bottom border-dark">
+				<div class="about nav-menu"><a href="/about.html">About</a></div>
+				
 					<ul class="nav nav-pills nav-menu">
 						<li class="nav-item dropdown">
 							<a
-								class="nav-link dropdown-toggle "
+								class="nav-link dropdown-toggle padding-test"
 								data-bs-toggle="dropdown"
 								href="#"
 								role="button"
@@ -63,8 +64,7 @@
 							</ul>
 						</li>
 					</ul>
-				
-				<div class="about nav-menu"><a href="/about.html">About</a></div>
+				<div class="resume nav-menu"><a href="/resume.html">Résumé</a></div>
 			</div>
 		</header>
 		<div class="container">
@@ -95,7 +95,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
-						<h3 class="text-center stay-in-touch">Let's Stay in Touch</h3>
+						<h3 class="text-center stay-in-touch" id="contact">Let's Stay in Touch</h3>
 						<a
 							href="mailto:maura@mauradolphin.com?subject=Hello,%20Maura&body=Please%20tell%20me%20more%20about%20yourself!"
 							class="text-center p-2 mt-3 mb-3 contact-button"
@@ -117,6 +117,7 @@
 				</div>
 			</div>
 		</footer>
+		
 		<script>
 			var dropdownElementList = [].slice.call(
 				document.querySelectorAll(".dropdown-toggle")
@@ -125,5 +126,6 @@
 				return new bootstrap.Dropdown(dropdownToggleEl);
 			});
 		</script>
+	
 	</body>
 </html>
