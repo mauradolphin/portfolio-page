@@ -2,8 +2,7 @@
 
 :root {
 	--primary-color: #8f9bc6;
-	--secondary-color: #f5f2fe;
-	--tertiary-color: #dde4ff;
+	--secondary-color: #dde4ff;
 	--box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 	--primary-logo-font: "Montserrat", sans-serif;
 	--secondary-hero-font: "EB Garamond", serif;
@@ -11,12 +10,13 @@
 }
 
 body {
-	margin: 10px 0;
+	margin: 10px 0 77px 0;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
 	margin: 0;
 }
 
@@ -35,12 +35,19 @@ h3 {
 	opacity: 0.7;
 	font-family: var(--primary-logo-font);
 	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+h4 {
+	font-size: 16px;
+	opacity: 0.7;
+	font-family: var(--primary-logo-font);
+	letter-spacing: 0.05em;
 }
 
 p {
 	font-size: 18px;
-	line-height: 1.5;
-	margin: 10px;
+	line-height: 2;
 	font-family: var(--text-font);
 }
 
@@ -72,19 +79,9 @@ a:hover {
 	text-transform: capitalize;
 }
 
-.contact-link {
-	background: var(--primary-color);
-	box-shadow: var(--box-shadow);
-	color: white;
-}
-
-.contact-link:hover {
-	color: var(--tertiary-color);
-}
-
 .about-paragraphs {
 	display: flex;
-	margin: 20px auto;
+	margin: 10px auto;
 }
 
 .email-link {
@@ -106,17 +103,10 @@ a:hover {
 }
 
 .shecodes-link:hover {
-	text-decoration: underline;
 	color: var(--primary-color);
 }
 
 .navigation {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.test {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -134,11 +124,6 @@ a:hover {
 	color: var(--primary-color) !important;
 }
 
-.test-pic {
-	max-width: 100px;
-	position: relative;
-	top: 550px;
-}
 .nav-menu {
 	margin: 2px 10px !important;
 	padding: 1px 10px !important;
@@ -170,6 +155,12 @@ a:hover {
 	font-size: 24px;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
+	color: black !important;
+	opacity: 60%;
+}
+
+.home-name:hover {
+	color: var(--secondary-color);
 }
 
 .contact-button {
@@ -215,7 +206,21 @@ a:hover {
 }
 
 #about-me {
-	text-transform: uppercase;
+	font-family: var(--secondary-hero-font);
+	font-size: 30px;
+	letter-spacing: 0.1em;
+}
+
+.bonjour {
+	font-size: 20px;
+}
+
+.hola {
+	font-size: 14px;
+}
+
+.about-paragraphs #auram-link {
+	color: black;
 }
 
 @media (max-width: 576px) {
@@ -260,7 +265,26 @@ a:hover {
 		font-size: 10px;
 	}
 
-	.padding-test {
+	.padding-dropdown {
 		padding: 2px !important;
+	}
+
+	#about-me {
+		font-size: 28px;
+		padding: 0;
+	}
+
+	#developer-artist {
+		font-size: 20px;
+	}
+
+	#chicago {
+		padding: 5px;
+	}
+
+	p {
+		font-size: 14px;
+		line-height: 2;
+		font-family: var(--text-font);
 	}
 }

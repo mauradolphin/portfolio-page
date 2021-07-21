@@ -7,6 +7,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Maura Dolphin - Web Developer - Jeweler</title>
+		<link rel="shortcut icon" type="image/jpg" href="/images/dolphin.png" />
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
 			rel="stylesheet"
@@ -43,17 +44,21 @@
 	</head>
 	<body>
 		<header>
-			<h1 id="home-name" class="text-center pt-2 mt-2 home-name">
-				Maura Dolphin
-			</h1>
+			<a href="/index.html" title="Home"
+				><h1 id="home-name" class="text-center pt-2 mt-2 home-name">
+					Maura Dolphin
+				</h1></a
+			>
 			<div class="navigation border-bottom border-dark">
 				<div class="about nav-menu"><a href="/index.html"> Home</a></div>
-				<div class="resume nav-menu"><a href="/resume.html">Résumé</a></div>
+				<div class="resume nav-menu active">
+					<a href="/about.html" class="active">About</a>
+				</div>
 
 				<ul class="nav nav-pills nav-menu">
 					<li class="nav-item dropdown">
 						<a
-							class="nav-link dropdown-toggle padding-test"
+							class="nav-link dropdown-toggle padding-dropdown"
 							data-bs-toggle="dropdown"
 							href="#"
 							role="button"
@@ -73,69 +78,88 @@
 						</ul>
 					</li>
 				</ul>
-
+				<div class="resume nav-menu"><a href="/resume.html">Résumé</a></div>
 				<div class="contact nav-menu"><a href="#contact">Contact</a></div>
 			</div>
 		</header>
-
-		<h1 class="text-center pt-3 pb-3" id="about-me">About Me</h1>
-		<h3 class="text-center ms-1 mr-1 mb-0">
-			Front-end developer from Chicago, USA
-		</h3>
-		<div class="about-paragraphs text-center">
-			<p id="about-text">
-				&emsp;Before the 2020 pandemic, I was a working artist commuting four
-				hours a day to a retail job at a store that represented
-				<a
-					href="https://www.auramjewelry.com"
-					target="_blank"
-					title="auram jewelry"
-				>
-					auram</a
-				>, my line of jewelry. Faced with unemployment when lockdown hit, I
-				switched from retail sales to web development and migrated my employer's
-				platform to Shopify. <br />&emsp;Overwhelmed by the liquid template
-				language of Shopify when trying to inject custom code, I signed up for a
-				three week Coding Basics workshop with
-				<a href="https://www.shecodes.io/" class="shecodes-link">SheCodes</a>
-				and never looked back. 👾
-			</p>
-		</div>
-		<div class="container">
+		<div class="container mt-1">
 			<div class="row">
-				<div class="col-sm-4">
-					<img
-						src="images/yoga.png"
-						class="img-fluid p-2 shadow rounded"
-						alt="picture of yoga app"
-					/>
+				<div class="col-md-6">
+					<div class="col-sm-12">
+						<h1 class="text-center pt-2 pb-2" id="about-me">Hi, I'm Maura</h1>
+						<h3 class="text-center" id="developer-artist">
+							Artist & Developer
+						</h3>
+						<h4 class="text-center mt-2 mb-1" id="chicago">About Me</h4>
+					</div>
+					<div class="col-sm-12">
+						<div class="about-paragraphs text-center">
+							<p id="about-text">
+								&emsp;Before 2020, I was a part time jeweler working in a store
+								that sold
+								<a
+									href="https://www.auramjewelry.com"
+									target="_blank"
+									title="auram jewelry"
+									id="auram-link"
+								>
+									auram</a
+								>, my line of fine jewelry. Faced with unemployment at
+								lockdown, I shifted from retail sales to web development and
+								migrated my employer's website from Squarespace to Shopify.
+								<br />&emsp;Overwhelmed by the liquid template language of
+								Shopify when trying to inject custom code, I signed up for a
+								three week Coding Basics workshop with
+								<a href="https://www.shecodes.io/" class="shecodes-link" target="_blank" title="SheCodes coding classes"
+									>SheCodes</a
+								>
+							 and haven't stopped learning since 👾
+							</p>
+						</div>
+					</div>
 				</div>
-				<div class="col-sm-4">
-					<img
-						src="images/weather.png"
-						class="img-fluid p-2 shadow rounded"
-						alt="picture of weather app"
-					/>
-				</div>
-				<div class="col-sm-4">
-					<img
-						src="images/yogurt.png"
-						class="img-fluid p-2 shadow rounded"
-						alt="picture of yogurt"
-					/>
+				<div class="col-md-6">
+					<div class="col-sm-12">
+						<img
+							src="/images/maura-makes.jpeg"
+							class="img-fluid mt-1 mb-2 pt-2 pb-1 rounded-circle"
+							id="bio-image"
+							alt=""
+						/>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div id="contact" class="mt-5 mb-5 text-center">
-			<h2>📮 Contact me</h2>
-			<a
-				href="mailto:maura@auramjewelry.com?subject=Hello,%20Maura&body=Please%20tell%20me%20more%20about%20yourself!"
-				class="email-link"
-				title="Contact Maura via Email"
-			>
-				maura@auramjewelry.com
-			</a>
-		</div>
+    	<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3 class="text-center stay-in-touch" id="contact">Let's Stay in Touch</h3>
+						<a
+							href="mailto:maura@mauradolphin.com?subject=Hello,%20Maura&body=Please%20tell%20me%20more%20about%20yourself!"
+							class="text-center p-2 mt-3 mb-3 contact-button"
+							>email me</a
+						>
+					</div>
+				</div>
+			</div>
+      <footer>
+			<div class="navigation mb-5 border-bottom border-dark">
+        
+				<div class="footer mb-3"><a href="https://www.instagram.com/auramjewelry/" target=
+        "_blank" title="auram jewelry instagram"><i class="fab fa-instagram"></i></a></div>
+				<div class="footer mb-3"><a href="https://www.facebook.com/auramjewelry/" target=
+        "_blank" title="auram jewelry Facebook"><i class="fab fa-facebook-f"></i></a></div>
+				<div class="footer mb-3"><a href="https://www.linkedin.com/in/maura-lenahan-dolphin-6ab2b381/" target=
+        "_blank" title ="Maura's LinkedIn"><i class="fab fa-linkedin-in"></i></a></div>
+				<div class="footer mb-3">
+					<a href="https://auramjewelry.com/" target="_blank"><i class="fas fa-shopping-bag" id="contact" title="auram jewelry website"></a></i>
+				</div>
+			</div>
+			
+		
+		</footer>
+		
 		<script>
 			var dropdownElementList = [].slice.call(
 				document.querySelectorAll(".dropdown-toggle")
