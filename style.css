@@ -26,8 +26,8 @@ h1 {
 }
 
 h2 {
-	font-size: 48px;
-	font-family: var(--secondary-hero-font);
+	font-size: 22px;
+	font-family: var(--primary-logo-font);
 }
 
 h3 {
@@ -39,8 +39,6 @@ h3 {
 }
 
 h4 {
-	font-size: 16px;
-	opacity: 0.7;
 	font-family: var(--primary-logo-font);
 	letter-spacing: 0.05em;
 }
@@ -48,7 +46,7 @@ h4 {
 p {
 	font-size: 18px;
 	line-height: 2;
-	font-family: var(--text-font);
+	font-family: var(--primary-logo-font);
 }
 
 a {
@@ -132,8 +130,9 @@ a:hover {
 }
 
 .home-hero-text {
-	font-size: 38px;
+	font-size: 42px;
 	margin: 30px 50px 20px 50px;
+	font-family: var(--secondary-hero-font);
 	color: black;
 	opacity: 80%;
 }
@@ -211,16 +210,56 @@ a:hover {
 	letter-spacing: 0.1em;
 }
 
-.bonjour {
-	font-size: 20px;
+.resume a {
+	color: black;
+	opacity: 70%;
 }
 
-.hola {
-	font-size: 14px;
+.resume a:hover {
+	color: var(--primary-color);
 }
 
 .about-paragraphs #auram-link {
 	color: black;
+}
+
+.resume-head {
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	font-size: 20px !important;
+	border-bottom: 1px solid var(--primary-color);
+}
+
+.resume-date {
+	text-align: right;
+	font-family: var(--text-font);
+}
+
+.resume-content {
+	text-align: left;
+	font-family: var(--primary-logo-font);
+	line-height: 1.25em;
+}
+
+.resume-title {
+	font-family: var(--primary-logo-font);
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.resume-location {
+	opacity: 70%;
+}
+
+.resume-head2 {
+	border-bottom: 1px solid #dde4ff;
+
+	opacity: 70%;
+	font-size: 20px;
+}
+
+.active {
+	color: black !important;
 }
 
 @media (max-width: 576px) {
@@ -230,7 +269,7 @@ a:hover {
 	}
 
 	h2 {
-		font-size: 48px;
+		font-size: 28px;
 		text-align: center;
 	}
 
@@ -249,7 +288,7 @@ a:hover {
 	}
 
 	.home-hero-text {
-		font-size: 48px;
+		font-size: 38px;
 		margin: 15px 15px 10px 15px;
 	}
 
@@ -278,13 +317,17 @@ a:hover {
 		font-size: 20px;
 	}
 
-	#chicago {
-		padding: 5px;
-	}
-
 	p {
 		font-size: 14px;
 		line-height: 2;
 		font-family: var(--text-font);
+	}
+
+	.resume-date {
+		text-align: center;
+	}
+
+	.resume-content {
+		text-align: center;
 	}
 }
