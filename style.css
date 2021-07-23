@@ -115,11 +115,11 @@ a:hover {
 }
 
 .navigation a {
-	color: #7c88ad !important;
+	color: black;
 }
 
 .navigation a:hover {
-	color: var(--primary-color) !important;
+	color: var(--primary-color);
 }
 
 .nav-menu {
@@ -154,8 +154,7 @@ a:hover {
 	font-size: 24px;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
-	color: black !important;
-	opacity: 60%;
+	color: var(--primary-color);
 }
 
 .home-name:hover {
