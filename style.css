@@ -305,6 +305,11 @@ iframe {
 .github {
 	max-width: 100px;
 }
+
+.problem-child {
+	max-width: 300px;
+}
+
 @media (max-width: 576px) {
 	h1 {
 		font-size: 26px;
