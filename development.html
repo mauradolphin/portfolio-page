@@ -42,57 +42,58 @@
 		/>
 		<meta property="og-type" content="person" />
 	</head>
-
-	<body >
+	<body>
 		<header>
-			<a href="/index.html"><h1 id="home-name" class="text-center pt-2 mt-2 home-name">Maura Dolphin</h1></a>
+			<a href="/index.html" title="Home"
+				><h1 id="home-name" class="text-center pt-2 mt-2 home-name">
+					Maura Dolphin
+				</h1></a
+			>
 			<div class="navigation border-bottom border-dark">
-				<div class="nav-menu"><a href="/about.html">About</a></div>
-				
-					<ul class="nav nav-pills nav-menu">
-						<li class="nav-item dropdown">
-							<a
-								class="nav-link dropdown-toggle padding-dropdown"
-								data-bs-toggle="dropdown"
-								href="#"
-								role="button"
-								aria-expanded="false"
-								>Portfolio</a
-							>
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="/development.html" >Web Development</a></li>
-								<li><a class="dropdown-item" href="/jewelry.html">Jewelry</a></li>
-							</ul>
-						</li>
-					</ul>
+				<div class="nav-menu"><a href="/index.html"> Home</a></div>
+				<div class="nav-menu">
+					<a href="/about.html">About</a>
+				</div>
+
+				<ul class="nav nav-pills nav-menu">
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle padding-dropdown"
+							data-bs-toggle="dropdown"
+							href="#"
+							role="button"
+							aria-expanded="false"
+							>Portfolio</a
+						>
+						<ul class="dropdown-menu">
+							<li>
+								<a class="dropdown-item" href="/development.html"
+									>Web Development</a
+								>
+							</li>
+							<li><a class="dropdown-item" href="/jewelry.html">Jewelry</a></li>
+						</ul>
+					</li>
+				</ul>
 				<div class="nav-menu"><a href="/resume.html">Résumé</a></div>
+				<div class="nav-menu"><a href="#contact">Contact</a></div>
 			</div>
 		</header>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 p-5 designer-border">
-					<a href="/development.html">
-						<h2 class="text-center home-hero-text">
-							Designer <br /><small><em>and</em></small
-							><br />
-							Developer
-						</h2>
-					</a>
-					<a href="/development.html"><i class="fas fa-desktop icon-button"></i></a>
-				</div>
-				<div class="col-sm-6 p-5">
-					<a href="/jewelry.html">
-						<h2 class="text-center home-hero-text">
-							Jeweler <br /><small><em>and</em></small
-							><br />
-							Fine Artist
-						</h2>
-					</a>
-					<a href="/jewelry.html"><i class="far fa-gem icon-button"></i></a>
-				</div>
-			</div>
-		</div>
-		<footer>
+    <h1 class="text-center m-2 portfolio-hero">Web Design and Development</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12"><h2 >Responsive Web App</h2>
+          <br />
+          <h3>Open Weather Map API</h3></div>
+        <div class="col-sm-6"></div>
+        <div class="col-sm-6"></div>
+        <div class="col-sm-12"><h2></h2></div>
+        <div class="col-sm-6"></div>
+        <div class="col-sm-6"></div>
+      </div>
+    </div>
+
+     <footer>
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
@@ -117,11 +118,8 @@
 					<a href="https://auramjewelry.com/" target="_blank"><i class="fas fa-shopping-bag" id="contact" title="auram jewelry website"></a></i>
 				</div>
 			</div>
-			
-		
 		</footer>
-		
-		<script>
+    <script>
 			var dropdownElementList = [].slice.call(
 				document.querySelectorAll(".dropdown-toggle")
 			);
@@ -129,6 +127,5 @@
 				return new bootstrap.Dropdown(dropdownToggleEl);
 			});
 		</script>
-	
 	</body>
 </html>

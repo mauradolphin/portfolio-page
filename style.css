@@ -258,13 +258,21 @@ a:hover {
 	font-size: 20px;
 }
 
-.active {
-	color: black !important;
+.about-me {
+	opacity: 80%;
+}
+
+.jewelry-otb {
+	max-width: 296px;
+}
+
+.jewelry-title {
+	font-size: 32px;
 }
 
 @media (max-width: 576px) {
 	h1 {
-		font-size: 56px;
+		font-size: 26px;
 		line-height: 1.5;
 	}
 
@@ -308,15 +316,6 @@ a:hover {
 		padding: 2px !important;
 	}
 
-	#about-me {
-		font-size: 28px;
-		padding: 0;
-	}
-
-	#developer-artist {
-		font-size: 20px;
-	}
-
 	p {
 		font-size: 14px;
 		line-height: 2;
@@ -329,5 +328,9 @@ a:hover {
 
 	.resume-content {
 		text-align: center;
+	}
+
+	.portfolio-hero {
+		font-size: 28px !important;
 	}
 }

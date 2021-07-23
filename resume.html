@@ -50,8 +50,8 @@
 				</h1></a
 			>
 			<div class="navigation border-bottom border-dark">
-				<div class="about nav-menu"><a href="/index.html"> Home</a></div>
-				<div class="resume nav-menu">
+				<div class="nav-menu"><a href="/index.html"> Home</a></div>
+				<div class="nav-menu">
 					<a href="/about.html" >About</a>
 				</div>
 
@@ -69,17 +69,16 @@
 							<li>
 								<a
 									class="dropdown-item"
-									href="https://heuristic-raman-3c13c1.netlify.app/"
-									target="_blank"
+									href="/development.html"
 									>Web Development</a
 								>
 							</li>
-							<li><a class="dropdown-item" href="#">Jewelry</a></li>
+							<li><a class="dropdown-item" href="/jewelry.html">Jewelry</a></li>
 						</ul>
 					</li>
 				</ul>
-				<div class="resume nav-menu"><a href="/resume.html" class="active">Résumé</a></div>
-				<div class="contact nav-menu"><a href="#contact">Contact</a></div>
+				<div class="nav-menu"><a href="/resume.html">Résumé</a></div>
+				<div class="nav-menu"><a href="#contact">Contact</a></div>
 			</div>
 		</header>
 		<div class="container resume">
@@ -145,7 +144,7 @@
 					>
 				</div>
 				<div class="col-sm-12 text-center resume-head mt-3 mb-2 pb-1">
-					<h2>Certifications, Awards, and Honors</h2>
+					<h2>Certifications & Honors</h2>
 				</div>
 				<div class="col-sm-4 resume-date">2021</div>
 				<div class="col-sm-8 resume-content">
@@ -350,5 +349,13 @@
 				</div>
 			</div>
 		</footer>
+    <script>
+			var dropdownElementList = [].slice.call(
+				document.querySelectorAll(".dropdown-toggle")
+			);
+			var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+				return new bootstrap.Dropdown(dropdownToggleEl);
+			});
+		</script>
 	</body>
 </html>
