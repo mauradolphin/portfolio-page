@@ -245,17 +245,11 @@ a:hover {
 	font-family: var(--primary-logo-font);
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
+  
 }
 
 .resume-location {
 	opacity: 70%;
-}
-
-.resume-head2 {
-	border-bottom: 1px solid #dde4ff;
-
-	opacity: 70%;
-	font-size: 20px;
 }
 
 .about-me {
@@ -268,6 +262,24 @@ a:hover {
 
 .jewelry-title {
 	font-size: 32px;
+	padding-top: 50px;
+}
+
+.logo {
+	max-width: 100px;
+}
+
+.showcase {
+	max-width: 500px;
+}
+
+.materials {
+  padding: 10px;
+  margin top: 10px;
+}
+
+.portfolio-hero {
+  font-family: var(--secondary-hero-font) !important;
 }
 
 @media (max-width: 576px) {
@@ -332,5 +344,10 @@ a:hover {
 
 	.portfolio-hero {
 		font-size: 28px !important;
+	}
+
+	.jewelry-title {
+		font-size: 28px;
+		padding-top: 20px;
 	}
 }
