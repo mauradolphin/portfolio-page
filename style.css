@@ -255,7 +255,7 @@ footer .stay-in-touch {
 
 .portfolio-subtext {
 	font-family: var(--secondary-hero-font) !important;
-	color: var(--primary-color);
+	opacity: 70%;
 }
 
 iframe {
@@ -289,6 +289,10 @@ iframe {
 
 	p {
 		text-align: center;
+	}
+
+	header .name-styling {
+		font-size: 26px;
 	}
 
 	.project-link {
@@ -340,7 +344,7 @@ iframe {
 	}
 
 	.portfolio-hero {
-		font-size: 28px !important;
+		font-size: 20px !important;
 	}
 
 	.jewelry-title {
@@ -355,5 +359,15 @@ iframe {
 	.project-title {
 		font-size: 24px;
 		padding-top: 10px;
+	}
+
+	.project-subtext {
+		font-size: 18px;
+	}
+
+	.materials {
+		padding: 5px;
+		margin-top: 5px;
+		font-size: 18px;
 	}
 }
