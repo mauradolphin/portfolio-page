@@ -134,6 +134,7 @@ header .name-styling:hover {
 .about p {
 	text-align: center;
 	border-radius: 4px;
+	margin-bottom: 5px;
 }
 
 #im-maura {
@@ -217,7 +218,7 @@ footer .stay-in-touch {
 
 .about-me {
 	color: var(--primary-color);
-	font-size: 18px;
+	font-size: 22px;
 }
 
 .jewelry-otb {
