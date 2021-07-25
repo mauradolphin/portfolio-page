@@ -128,7 +128,6 @@ header .name-styling:hover {
 
 .about {
 	display: flex;
-	margin: 10px auto;
 }
 
 .about p {
@@ -222,7 +221,9 @@ footer .stay-in-touch {
 
 .about-me {
 	color: var(--primary-color);
-	font-size: 22px;
+	font-size: 20px;
+	font-family: var(--primary-logo-font);
+	font-weight: 300;
 }
 
 .jewelry-otb {
