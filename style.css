@@ -27,12 +27,12 @@ h1 {
 }
 
 h2 {
-	font-size: 22px;
+	font-size: 24px;
 	font-family: var(--primary-logo-font);
 }
 
 h3 {
-	font-size: 20px;
+	font-size: 22px;
 	opacity: 0.7;
 	font-family: var(--primary-logo-font);
 	text-transform: uppercase;
