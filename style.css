@@ -75,6 +75,13 @@ header .nav-menu {
 	font-size: 12px;
 }
 
+header .index-nav-menu {
+	margin: 2px 15px !important;
+	padding: 1px 15px !important;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
 header .name-styling {
 	font-size: 24px;
 	letter-spacing: 0.2em;
@@ -106,7 +113,7 @@ header .name-styling:hover {
 
 .home-hero-text {
 	font-size: 42px;
-	margin: 30px 50px 20px 50px;
+	margin: 30px;
 	font-family: var(--secondary-hero-font);
 	color: black;
 	opacity: 80%;
@@ -283,6 +290,18 @@ iframe {
 	font-weight: 300 !important;
 }
 
+iframe {
+	border: 0.5px solid rgb(143, 155, 198, 0.25);
+	border-radius: 5px;
+}
+
+.open-source-note {
+	font-size: 12px;
+	font-family: var(--primary-logo-font);
+	text-transform: uppercase;
+	color: var(--primary-color);
+}
+
 @media (max-width: 576px) {
 	h1 {
 		font-size: 26px;
@@ -314,7 +333,7 @@ iframe {
 
 	.home-hero-text {
 		font-size: 38px;
-		margin: 15px 15px 10px 15px;
+		margin: 10px;
 	}
 
 	.designer-border {

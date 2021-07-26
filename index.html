@@ -44,33 +44,49 @@
 	</head>
 
 	<body >
-		<header>
-			<a href="/index.html" title="Home"><h1 class="text-center pt-2 mt-2 name-styling">Maura Dolphin</h1></a>
+			<header id="header">
+			<a href="/index.html" title="Home"
+				><h1 id="home-name" class="text-center pt-2 mt-2 name-styling">
+					Maura Dolphin
+				</h1></a
+			>
 			<div class="navigation border-bottom border-dark">
-				<div class="nav-menu"><a href="/about.html" title="About Maura Dolphin">About</a></div>
-				
-					<ul class="nav nav-pills nav-menu">
-						<li class="nav-item dropdown">
-							<a
-								class="nav-link dropdown-toggle padding-dropdown"
-								data-bs-toggle="dropdown"
-								href="#"
-								role="button"
-								aria-expanded="false"
-								>Portfolio</a
-							>
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="/development.html" >Web Development</a></li>
-								<li><a class="dropdown-item" href="/jewelry.html">Jewelry</a></li>
-							</ul>
-						</li>
-					</ul>
+				<div class="nav-menu"><a href="/index.html" class="active-page" title="Home"> Home</a></div>
+				<div class="nav-menu">
+					<a href="/about.html" title="About Maura">About</a>
+				</div>
+
+				<ul class="nav nav-pills nav-menu">
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle padding-dropdown"
+							data-bs-toggle="dropdown"
+							href="#"
+							title="Art and Web Portfolio"
+							role="button"
+							aria-expanded="false"
+							>Portfolio</a
+						>
+						<ul class="dropdown-menu">
+							<li>
+								<a
+									class="dropdown-item"
+									title="Front-End Web Development Portfolio"
+									href="/development.html"
+									>Web Development</a
+								>
+							</li>
+							<li><a class="dropdown-item" title="Jewelry and Stonesetting Portfolio" href="/jewelry.html">Jewelry</a></li>
+						</ul>
+					</li>
+				</ul>
 				<div class="nav-menu"><a href="/resume.html" title="Maura's Resume">Résumé</a></div>
+				<div class="nav-menu"><a href="#contact" title="Contact Maura">Contact</a></div>
 			</div>
 		</header>
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6 p-5 designer-border">
+				<div class="col-sm-6 p-4 designer-border">
 					<a href="/development.html" title="Web Development Portfolio">
 						<h2 class="text-center home-hero-text">
 							Designer <br /><small><em>and</em></small
@@ -78,9 +94,10 @@
 							Developer
 						</h2>
 					</a>
-					<a href="/development.html" title="Web Development Portfolio"><i class="fas fa-desktop icon-button"></i></a>
+					<div class="mb-3">
+					<a href="/development.html" title="Web Development Portfolio" class="mb-1"><i class="fas fa-desktop icon-button"></i></a></div>
 				</div>
-				<div class="col-sm-6 p-5">
+				<div class="col-sm-6 p-4">
 					<a href="/jewelry.html" title="Jewelry Portfolio">
 						<h2 class="text-center home-hero-text">
 							Jeweler <br /><small><em>and</em></small
@@ -88,7 +105,8 @@
 							Artist
 						</h2>
 					</a>
-					<a href="/jewelry.html" title="Jewelry Portfolio"><i class="far fa-gem icon-button"></i></a>
+					<div class="mb-3">
+					<a href="/jewelry.html" title="Jewelry Portfolio"><i class="far fa-gem icon-button"></i></a></div>
 				</div>
 			</div>
 		</div>
