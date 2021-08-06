@@ -162,13 +162,13 @@ header .name-styling:hover {
 footer .contact-button {
 	display: block;
 	margin: 0 auto;
-	max-width: 115px;
-	font-size: 14px;
-	line-height: 16px;
+	max-width: 210px;
+	font-size: 13px;
+	line-height: 18px;
 	font-family: var(--secondary-hero-font);
 	border: 0.5px solid var(--primary-color);
 	border-radius: 4px;
-	letter-spacing: 0.1em;
+	letter-spacing: 0.125em;
 }
 
 footer .stay-in-touch {
@@ -402,5 +402,13 @@ iframe {
 	body {
 		width: 100%;
 		overflow-x: hidden;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.lg-screen-margin-top {
+		margin-top: 20px;
+		font-size: 20px;
+		line-height: 2em;
 	}
 }
